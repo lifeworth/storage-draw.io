@@ -1,9 +1,36 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.14">
   <diagram name="Page-1" id="pimWNA29k5C_EcLc2VTi">
-    <mxGraphModel>
+    <mxGraphModel dx="2603" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Aqxf6SdZEtOBrOWVnJZU-1" value="质押" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Aqxf6SdZEtOBrOWVnJZU-2" value="业务逻辑：" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="65" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Aqxf6SdZEtOBrOWVnJZU-3" value="用户存入一定数量的代币到合约中，持有的时间越长，获得的奖励就越多。" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="110" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Aqxf6SdZEtOBrOWVnJZU-4" value="业务流程包括" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="160" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Aqxf6SdZEtOBrOWVnJZU-5" value="&lt;p data-end=&quot;188&quot; data-start=&quot;178&quot;&gt;&lt;span data-end=&quot;188&quot; data-start=&quot;178&quot;&gt;&lt;b&gt;用户质押代币&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;用户调用 &lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;223&quot; data-start=&quot;199&quot;&gt;stake(uint256 _amount)&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; 方法，将代币转移到合约中。&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;合约记录用户的质押数量，并更新总质押量。&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;质押开始后，用户可以随时查询他们的应得奖励。&lt;/span&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="195" width="370" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Aqxf6SdZEtOBrOWVnJZU-6" value="&lt;p data-end=&quot;306&quot; data-start=&quot;296&quot;&gt;&lt;span data-end=&quot;306&quot; data-start=&quot;296&quot;&gt;&lt;b&gt;用户赚取奖励&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;质押者的奖励随着时间累积，按照设定的奖励率计算。&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;奖励根据“用户质押的代币数量”和“质押时间”动态计算。&lt;/span&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="293" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Aqxf6SdZEtOBrOWVnJZU-7" value="&lt;p data-end=&quot;384&quot; data-start=&quot;374&quot;&gt;&lt;span data-end=&quot;384&quot; data-start=&quot;374&quot;&gt;&lt;b&gt;用户领取奖励&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;用户可以随时调用 &lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;412&quot; data-start=&quot;399&quot;&gt;getReward()&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; 方法领取已经累积的奖励。&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;领取奖励后，已领取的部分会被清零，下一次开始重新累积。&lt;/span&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="400" width="350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Aqxf6SdZEtOBrOWVnJZU-8" value="&lt;p data-end=&quot;473&quot; data-start=&quot;463&quot;&gt;&lt;span data-end=&quot;473&quot; data-start=&quot;463&quot;&gt;&lt;b&gt;用户解除质押&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;用户调用 &lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;511&quot; data-start=&quot;484&quot;&gt;withdraw(uint256 _amount)&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; 方法，从合约中取回他们的质押代币。&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;解除质押时，用户已经累积的奖励不会消失，仍然可以领取。&lt;/span&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="500" width="430" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Aqxf6SdZEtOBrOWVnJZU-9" value="&lt;p data-end=&quot;577&quot; data-start=&quot;567&quot;&gt;&lt;span data-end=&quot;577&quot; data-start=&quot;567&quot;&gt;&lt;b&gt;合约分配奖励&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;合约管理员（&lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;596&quot; data-start=&quot;589&quot;&gt;owner&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;）可以调用 &lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;639&quot; data-start=&quot;602&quot;&gt;notifyRewardAmount(uint256 _amount)&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; 方法，&lt;br&gt;向合约中存入奖励代币，并设定一个奖励周期。&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;合约根据当前总质押量，计算每个代币应得的奖励。&lt;/span&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="595" width="440" height="110" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
